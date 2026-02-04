@@ -110,9 +110,16 @@ body {
     justify-content: space-between;
 
     background-color: var(--main-container);
-    color: var(--password-inactive);
 
     padding: 1.6rem;
+
+}
+.password-section__password--inactive{
+color: var(--password-inactive);
+}
+
+.password-section__password--active{
+    color: var(--password-active) !;
 
 }
 
@@ -237,7 +244,7 @@ input[type="range"]::-webkit-slider-thumb:active {
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     border: white solid 0.2rem;
     width: 2rem;
     height: 2rem;
