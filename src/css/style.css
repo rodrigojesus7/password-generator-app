@@ -233,7 +233,11 @@ input[type="range"]::-webkit-slider-thumb:active {
 
 }
 
-.character-section__options__diverse__checkbox label div {
+.character-section__options__diverse__checkbox__svg-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     border: white solid 0.2rem;
     width: 2rem;
     height: 2rem;
@@ -248,14 +252,6 @@ input[type="range"]::-webkit-slider-thumb:active {
     border: var(--character-options-checkbox) solid 0.2rem;
     background-color: var(--character-options-checkbox);
 }
-
-
-.character-section__options__diverse__checkbox__svg-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 
 .strength-section {
     display: flex;
