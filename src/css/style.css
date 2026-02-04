@@ -125,6 +125,14 @@ body {
     gap: 0.8rem;
 }
 
+.password-section__copy-container__copy-icon{
+    cursor: pointer;
+}
+
+.password-section__copy-container__copy-icon:hover path{
+    fill: var(--password-copy-icon-active);
+}
+
 
 .character-section {
     display: flex;
