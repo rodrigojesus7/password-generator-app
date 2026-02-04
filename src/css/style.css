@@ -120,15 +120,15 @@ body {
 
 }
 
-.password-section__password{
+.password-section__password {
     overflow: hidden;
 }
 
-.password-section__password--inactive{
-color: var(--password-inactive);
+.password-section__password--inactive {
+    color: var(--password-inactive);
 }
 
-.password-section__password--active{
+.password-section__password--active {
     color: var(--password-active);
 
 }
@@ -142,11 +142,11 @@ color: var(--password-inactive);
     gap: 0.8rem;
 }
 
-.password-section__copy-container__copy-icon{
+.password-section__copy-container__copy-icon {
     cursor: pointer;
 }
 
-.password-section__copy-container__copy-icon:hover path{
+.password-section__copy-container__copy-icon:hover path {
     fill: var(--password-copy-icon-active);
 }
 
@@ -188,13 +188,10 @@ input[type="range"] {
     -webkit-appearance: none;
     appearance: none;
     width: 100%;
+    height: 0.8rem;
+    border-radius: 4px;
 
-    background: linear-gradient(
-        to right,
-        var(--character-bar-line-primary) 0%,
-        var(--character-bar-line-secondary) 0%
-      );
-
+    --fill-percent: 0%;
 }
 
 input[type="range"]:focus {
@@ -202,15 +199,16 @@ input[type="range"]:focus {
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
-    width: 100%;
     height: 0.8rem;
-    background-color: var(--character-bar-line-secondary);
     border-radius: 4px;
+    background: linear-gradient(
+        to right,
+        var(--character-bar-line-primary) var(--fill-percent),
+        var(--character-bar-line-secondary) var(--fill-percent)
+    );
 }
 
-input[type="range"]::-webkit-slider-runnable-track:active {
-    background-color: var(--character-bar-line-primary);
-}
+
 
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -346,22 +344,22 @@ input[type="range"]::-webkit-slider-thumb:active {
     fill: var(--generate-button-active-svg);
 }
 
-.too-weak{
+.too-weak {
     background-color: var(--too-weak);
     border-color: var(--too-weak);
 }
 
-.weak{
+.weak {
     background-color: var(--weak);
     border-color: var(--weak);
 }
 
-.medium{
+.medium {
     background-color: var(--medium);
     border-color: var(--medium);
 }
 
-.strong{
+.strong {
     background-color: var(--strong);
     border-color: var(--strong);
 }
