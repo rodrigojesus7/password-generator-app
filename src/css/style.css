@@ -232,7 +232,7 @@ input[type="range"]::-webkit-slider-thumb:hover {
     display: flex;
     flex-direction: column;
 
-    gap: 1.6rem;
+    gap: 1.8rem;
 }
 
 .character-section__options__diverse__checkbox {
