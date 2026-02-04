@@ -25,7 +25,7 @@ const charsets = {
 lengthBar.addEventListener('input', function () {
 
     lengthNumber.textContent = lengthBar.value
-
+    updateRangeFill(lengthBar);
 })
 
 
@@ -164,3 +164,21 @@ copyButton.addEventListener('click', function(){
 
 
 
+function updateRangeFill(range) {
+    const min = range.min || 0;
+    const max = range.max || 100;
+    const value = range.value;
+  
+    const percentage = ((value - min) / (max - min)) * 100;
+  
+    range.style.background = `
+      linear-gradient(
+        to right,
+        var(--character-bar-line-primary) ${percentage}%,
+        var(--character-bar-line-secondary) ${percentage}%
+      )
+    `;
+  }
+
+
+  updateRangeFill(lengthBar);
