@@ -200,7 +200,6 @@ input[type="range"]:focus {
 
 input[type="range"]::-webkit-slider-runnable-track {
     height: 0.8rem;
-    border-radius: 4px;
     background: linear-gradient(
         to right,
         var(--character-bar-line-primary) var(--fill-percent),
