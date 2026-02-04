@@ -5,6 +5,8 @@ const lengthBar = document.querySelector('#character-length')
 const lengthNumber = document.querySelector('.character-section__options__length__result__lenght-number')
 const strengthBoxes = document.querySelectorAll('.strength-section__status-section__status-container__box__status')
 const strengthText = document.querySelector('.strength-section__status-section__status-text')
+const copyButton = document.querySelector('.password-section__copy-container__copy-icon')
+const copiedText = document.querySelector('#copied-text')
 const tooWeak = document.querySelector('#too-weak')
 const weak = document.querySelector('#weak')
 const medium = document.querySelector('#medium')
@@ -143,12 +145,19 @@ generateButton.addEventListener('click', () => {
             strengthText.textContent = 'STRONG'
         }
 
+        copiedText.classList.add('hidden')
+
         strengthText.classList.remove('hidden')
 
         strengthCount = 0
     }
 });
 
+
+copyButton.addEventListener('click', function(){
+    navigator.clipboard.writeText(password.textContent)
+    copiedText.classList.remove('hidden')
+})
 
 
 
