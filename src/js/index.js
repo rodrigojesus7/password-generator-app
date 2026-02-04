@@ -22,7 +22,7 @@ const charsets = {
 }
 
 
-lengthBar.addEventListener('change', function () {
+lengthBar.addEventListener('input', function () {
 
     lengthNumber.textContent = lengthBar.value
 
