@@ -129,7 +129,7 @@ color: var(--password-inactive);
 }
 
 .password-section__password--active{
-    color: var(--password-active) !;
+    color: var(--password-active);
 
 }
 
