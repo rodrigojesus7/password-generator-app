@@ -62,6 +62,10 @@
         gap: 3.2rem;
     }
 
+    .strength-section__status-section{
+        padding: 2.4rem 3.2rem;
+    }
+
     .strength-section__status-section__strength-text{
         font-size: 1.8rem;
         font-weight: 700;
