@@ -73,3 +73,17 @@
 
 }
 
+
+@media(min-width: 64rem){
+    body {
+        margin: 13.3rem 25rem;
+    }
+}
+
+
+
+@media(min-width: 90rem){
+    body {
+        margin: 13.3rem 45rem;
+    }
+}
