@@ -34,6 +34,10 @@
 
     --generate-button: #A4FFAF;
     --generate-button-text: #24232C;
+    --generate-button-active: #24232C;
+    --generate-button-active-border: #A4FFAF;
+    --generate-button-active-text: #A4FFAF;
+    --generate-button-active-svg: #A4FFAF;
 }
 
 
@@ -246,14 +250,14 @@ input[type="range"]::-webkit-slider-thumb:active {
 }
 
 
-.strength-section{
+.strength-section {
     display: flex;
     flex-direction: column;
 
     gap: 1.6rem;
 }
 
-.strength-section__status-section{
+.strength-section__status-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -261,36 +265,50 @@ input[type="range"]::-webkit-slider-thumb:active {
     background-color: var(--strenght-container);
     color: var(--strenght-container-text);
 
-    padding: 1.6rem 3.2rem;
+    padding: 1.4rem 1.65rem;
 }
 
-.strength-section__status-section__status-text{
+.strength-section__status-section__status-text {
     color: var(--main-text);
 }
 
-.strength-section__status-section__status-container{
+.strength-section__status-section__status-container {
     display: flex;
     align-items: center;
     gap: 1.6rem;
 
 }
 
-.strength-section__status-section__status-container__box{
+.strength-section__status-section__status-container__box {
     display: flex;
     gap: 0.8rem;
 }
 
-.strength-section__status-section__status-container__box__status{
+.strength-section__status-section__status-container__box__status {
     width: 1rem;
     height: 2.8rem;
     border: solid 0.2rem white;
 }
 
-.generate-button{
+.generate-button {
     height: 5.6rem;
     background-color: var(--generate-button);
     color: var(--generate-button-text);
+    cursor: pointer;
+}
 
+.generate-button svg {
+    margin-left: 1.6rem;
+}
+
+.generate-button:active {
+    background-color: var(--generate-button-text);
+    border: solid 0.2rem var(--generate-button-active-border);
+    color: var(--generate-button-active-text);
+}
+
+.generate-button:active svg path {
+    fill: var(--generate-button-active-svg);
 }
 
 .hidden {
